@@ -1,0 +1,6 @@
+# TYPE  DATABASE    USER        CIDR-ADDRESS          METHOD
+
+# /var/lib/pgsql/data/pg_hba.conf
+# adding one line to open db conndections so I can remote psql to initialize the prodDb database
+host	all	all		0.0.0.0/0		md5
+

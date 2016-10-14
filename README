@@ -1,0 +1,41 @@
+#####################################
+README file written by Kathleen P Chase
+#####################################
+
+This project is a client for OWF.
+The client will be built upon the Ozone Widget Framework (OWF).
+OWF wiki: https://github.com/ozoneplatform/owf-framework/wiki
+
+
+1. To install the OWF, download latest release:
+
+   https://github.com/ozoneplatform/owf-framework/releases/download/v7.17.0/OWF-bundle-7.17.0.zip
+
+2. Extract all files from the bundle to a new folder (e.g., owf).
+
+3. Copy files from this git repository to ./owf/.
+
+4. Make adjustments as needed.
+
+   ./fix_pgsql.sh
+   ./insert_new_files.sh
+   ./apply_owf_fixes.sh
+
+5. Copy  new widget war files to ./owf/apache-tomcat/webapps/.
+
+6. Shutdown any existing tomcat server
+
+7. Setup postgresql server (if not already done)
+   sudo ./fix_pgsql.sh
+   sudo service postgresql-9.4 start (if not already done)
+
+8. Modify adaptation data as needed:
+
+   Adaptation Data                                                 File
+   ---------------                                                 ----
+   keystore and truststore files for security ports and protocols  server.xml
+   Database url, driver, username, & password                      OwfConfig.groovy
+   Authorized OWF users, roles, passwords                          users.properties
+
+9. sudo service owf_tomcat start
+
