@@ -39,3 +39,51 @@ OWF wiki: https://github.com/ozoneplatform/owf-framework/wiki
 
 9. sudo service owf_tomcat start
 
+Original zip contents look like the following.
+
+directory tree of OWF-bundle-7.17.0.zip:
+├───3rdPartyLicenses
+├───apache-tomcat
+│   ├───bin
+│   ├───certs
+│   ├───conf
+│   │   └───Catalina
+│   │       └───localhost
+│   ├───lib
+│   │   ├───help
+│   │   ├───ozone-security-beans
+│   │   └───themes
+│   ├───logs
+│   ├───temp
+│   ├───webapps
+│   └───work
+│       └───Catalina
+│           └───localhost
+│               └───owf
+├───dbscripts
+├───etc
+│   ├───docs
+│   │   └───jsdoc
+│   │       └───symbols
+│   │           └───src
+│   ├───tools
+│   └───widget
+│       ├───css
+│       ├───descriptor
+│       ├───flash-dragAndDrop
+│       │   └───ozone
+│       │       └───owf
+│       │           └───dd
+│       │               └───DragAndDropSupport
+│       ├───images
+│       │   └───dragAndDrop
+│       └───js
+│           ├───dojo-1.5.0-windowname-only
+│           │   ├───dojo
+│           │   │   └───resources
+│           │   └───dojox
+│           │       ├───io
+│           │       └───secure
+│           └───eventing
+└───ozone-security
+    └───ozone-security-beans
